@@ -1,0 +1,10 @@
+.MainPage_MapArea{
+    width: 50%;
+    margin:auto;
+}
+
+#legend{
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 70px;
+}
