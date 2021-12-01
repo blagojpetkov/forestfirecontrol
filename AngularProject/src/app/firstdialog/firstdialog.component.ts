@@ -27,7 +27,7 @@ export class FirstdialogComponent implements OnInit {
 }
 
 @Component({
-  selector: 'dialog',
-  templateUrl: 'firstDialog.html',
+  selector: 'real-dialog',
+  templateUrl: 'dialog.html',
 })
 export class DialogContentExampleDialog {}

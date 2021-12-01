@@ -13,6 +13,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import { FirstdialogComponent } from './firstdialog/firstdialog.component';
+import { DialogContentExampleDialog } from './firstdialog/firstdialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppComponent,
     NavBarComponent,
     MapComponent,
-    FirstdialogComponent
+    FirstdialogComponent,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,
