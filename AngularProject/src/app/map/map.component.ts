@@ -51,7 +51,7 @@ export class MapComponent implements OnInit {
     else{
         const dialogRef = this.dialog.open(DialogContentExampleDialog, {
           height: '150px',
-          width: '900px',
+          width: '572px',
           data:{name:town, onFire:false}
         });
   

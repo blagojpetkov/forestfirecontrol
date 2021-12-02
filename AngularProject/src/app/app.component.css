@@ -4,7 +4,7 @@ h1{
     color: gray;
 }
 
-footer{
+.middle{
     background-color: rgb(202, 50, 50);
 }
 
@@ -15,7 +15,24 @@ footer{
 }
 
 .item{
-        width: 300px;
+        width: 350px;
         height: 500px;
+        font-size: 18px;
+        font-family: 'Impact';
 
+}
+.item img {
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+footer{
+    background-color: rgb(27, 25, 25);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.white{
+    color: white;
 }
