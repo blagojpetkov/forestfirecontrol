@@ -1,0 +1,41 @@
+
+<mat-dialog-content class="mat-typography">
+    
+    <div *ngIf="city!==undefined">
+    <h1>Град {{city.name}}</h1>
+
+    <p>Број на потребни волонтери - пожарникари: {{city.volunteers}}</p>
+    <p>Број на потребни помошници - млади од 18 до 20 години: {{city.young_volunteers}}</p>
+    <p>Број на потребни противпожарни возила: {{city.firetrucks}}</p>
+    <p>Број на потребни цистерни за вода: {{city.watertenders}}</p>
+    <p>Број на потребна механизација - трактори: {{city.tractors}}</p>
+    <p>Потребни алатки за пожарникарите: {{city.tools}}</p>
+    <mat-divider></mat-divider>
+    <button mat-button (click) = "apply()">Аплицирај</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div *ngIf="city===undefined">
+        <h1>Град {{name}}</h1>
+    
+        <p style="color: green; font-size: xx-large;">Во овој град нема активни пожари</p>
+    </div>
+
+</mat-dialog-content>
+    
+
+
+

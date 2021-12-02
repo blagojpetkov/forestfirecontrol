@@ -12,16 +12,15 @@ import { MapComponent } from './map/map.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
-import { FirstdialogComponent } from './firstdialog/firstdialog.component';
-import { DialogContentExampleDialog } from './firstdialog/firstdialog.component';
+import { DialogContentExampleDialog } from './map/map.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     MapComponent,
-    FirstdialogComponent,
     DialogContentExampleDialog
   ],
   imports: [
@@ -35,7 +34,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatCheckboxModule,
     MatSelectModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
