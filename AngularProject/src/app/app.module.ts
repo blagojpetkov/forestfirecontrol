@@ -22,6 +22,7 @@ import { TeampageComponent } from './teampage/teampage.component';
 import { DriverspageComponent } from './driverspage/driverspage.component';
 import {MatTableModule} from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
+import { DriverformComponent } from './driverform/driverform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { MatInputModule } from '@angular/material/input';
     AboutpageComponent,
     HomeComponent,
     TeampageComponent,
-    DriverspageComponent
+    DriverspageComponent,
+    DriverformComponent
   ],
   imports: [
     BrowserModule,
