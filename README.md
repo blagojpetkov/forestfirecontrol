@@ -21,3 +21,13 @@ ForestFireControl претставува апликација изработен
 начин би сакале да помогнат. Тие исто така може да се пријават како волонтери или луѓе кои сакаат да пренесуваат волонтери.
 Опцијата за пренос на волонтери се наоѓа во главното мени под името "Аплицирај за превоз"  каде што ќе можат да пополнат форма со 
 соодветните информации.
+
+
+![image](https://user-images.githubusercontent.com/85490029/144635991-e533f719-c771-44e7-b317-9f4d3cefe6c7.png)
+![image](https://user-images.githubusercontent.com/85490029/144636185-e51f5ba7-9ce6-40de-9af4-87d6753e0407.png)
+![image](https://user-images.githubusercontent.com/85490029/144636253-4e3dd016-f1f0-4c84-b7ae-e1c48cafc94c.png)
+![image](https://user-images.githubusercontent.com/85490029/144636319-942773c7-2d00-4313-8407-50baaf5b9ff3.png)
+![image](https://user-images.githubusercontent.com/85490029/144636479-7187391d-956f-4443-be74-d66dfdac7bec.png)
+![image](https://user-images.githubusercontent.com/85490029/144636519-245e3b9a-c0cd-4827-aa50-6d8c75d01688.png)
+![image](https://user-images.githubusercontent.com/85490029/144636578-1125a99c-8e02-4458-b4e5-4e096a11310a.png)
+![image](https://user-images.githubusercontent.com/85490029/144636725-f296e8ae-aba6-4e9e-9c80-372c9565296b.png)
