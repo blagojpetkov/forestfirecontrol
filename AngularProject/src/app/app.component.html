@@ -1,3 +1,15 @@
+<app-nav-bar (toggle)="sidenav.toggle()"></app-nav-bar>
 
-<app-nav-bar></app-nav-bar>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <button (click)="sidenav.toggle()" routerLink="/team" mat-stroked-button class="white">За тимот</button>
+        <button (click)="sidenav.toggle()" routerLink="/about" mat-stroked-button class="white">Идеја</button>
+        <button (click)="sidenav.toggle()" routerLink="/driverform" mat-stroked-button class="white">Аплицирај за превоз</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

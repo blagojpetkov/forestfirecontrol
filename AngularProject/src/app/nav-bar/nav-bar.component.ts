@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MainService } from '../_services/main.service';
 
 @Component({
@@ -9,13 +9,14 @@ import { MainService } from '../_services/main.service';
 export class NavBarComponent implements OnInit {
   class="";
   service: MainService;
+  @Output() toggle: EventEmitter<any> = new EventEmitter();
   constructor(service: MainService) {this.service = service }
 
   ngOnInit(): void {
   }
-
+  
   public menuclick(){
-    this.service.opened=!this.service.opened;
+    this.toggle.emit();
     console.log("navbar Opened = " + this.service.opened)
       if(this.class==="")
       this.class="rotate";
