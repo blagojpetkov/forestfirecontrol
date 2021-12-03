@@ -74,6 +74,17 @@ export class DialogContentExampleDialog {
   public name:string;
   public router: Router
   public isitdisabled = true;
+
+  public checked1 = false;
+  public checked2 = false;
+  public checked3 = false;
+  public checked4 = false;
+  public checked5 = false;
+  public checked6 = false;
+
+
+
+
   constructor(router: Router ,public dialogRef: MatDialogRef<DialogContentExampleDialog>,@Inject(MAT_DIALOG_DATA) public data: {city: City, name:string, onFire: boolean}, public snackBar: MatSnackBar) { 
     this.router = router;
     if(data.onFire){
@@ -97,5 +108,9 @@ export class DialogContentExampleDialog {
   public cancel(): void{
     this.dialogRef.close();
   }  
+
+  public onSubmit(){
+    console.log("submitted");
+  }
 }
 

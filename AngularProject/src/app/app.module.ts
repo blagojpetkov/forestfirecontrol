@@ -23,6 +23,7 @@ import { DriverspageComponent } from './driverspage/driverspage.component';
 import {MatTableModule} from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { DriverformComponent } from './driverform/driverform.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,8 @@ import { DriverformComponent } from './driverform/driverform.component';
     MatSnackBarModule,
     MatSidenavModule,
     MatTableModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

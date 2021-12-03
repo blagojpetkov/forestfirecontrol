@@ -9,31 +9,26 @@
                     </div>
                     <hr>
                     <br>
-                    <form>
+                    <form (ngSubmit)="onSubmit()" #form="ngForm">
 
                     <mat-form-field appearance="fill">
-                        <mat-label>Име</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-
-                    <mat-form-field appearance="fill">
-                        <mat-label>Презиме</mat-label>
-                        <input matInput>
+                        <mat-label>Име и презиме</mat-label>
+                        <input matInput ngModel name="name" required>
                     </mat-form-field>
 
                     <mat-form-field appearance="fill">
                         <mat-label>Телефонски број</mat-label>
-                        <input matInput>
+                        <input matInput ngModel name="phone" required>
                       </mat-form-field>
 
                       <mat-form-field appearance="fill">
                         <mat-label>Време на тргнување</mat-label>
-                        <input matInput>
+                        <input matInput ngModel name="time" required>
                       </mat-form-field>
 
                       <mat-form-field appearance="fill">
                         <mat-label>Од градот</mat-label>
-                        <mat-select>
+                        <mat-select ngModel name="from" required>
                             <mat-option value="1">Скопје</mat-option>
                             <mat-option value="2">Македонски Брод</mat-option>
                             <mat-option value="3">Свети Николе</mat-option>
@@ -57,7 +52,7 @@
 
                       <mat-form-field appearance="fill">
                         <mat-label>До градот</mat-label>
-                        <mat-select>
+                        <mat-select ngModel name="to" required>
                           <mat-option value="1">Скопје</mat-option>
                           <mat-option value="2">Македонски Брод</mat-option>
                           <mat-option value="3">Свети Николе</mat-option>
@@ -68,7 +63,7 @@
                       </mat-form-field>
 
                     <div class="text-center mt-4">
-                        <button mat-raised-button color="warn" routerLink="/home">Submit</button>
+                        <button type="submit" mat-raised-button color="warn" [disabled]="!form.valid">Submit</button>
                     </div>
 
                   </form>
