@@ -1,0 +1,35 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image1 {
+    background-image: url('https://scontent.fskp4-2.fna.fbcdn.net/v/t1.6435-9/56286711_2299754873608259_2809342755468214272_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5BbZ2_TAthkAX9QIBFK&tn=lcAFDDOAvtU8HWaj&_nc_ht=scontent.fskp4-2.fna&oh=4b2b71b7b1aa341e640d75056eed9ed3&oe=61CD2A60');
+    background-size: cover;
+  }
+  .example-header-image2 {
+    background-image: url('https://scontent.fskp4-2.fna.fbcdn.net/v/t1.6435-1/p320x320/123528574_1660932504085209_3856843106136772310_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=qOunMyLwuaQAX-HpTby&_nc_ht=scontent.fskp4-2.fna&oh=d5ddd854cb1428321ebce0cdb21b7c05&oe=61CDAB5E');
+    background-size: cover;
+  }
+  .example-header-image3 {
+    background-image: url('https://scontent.fskp4-2.fna.fbcdn.net/v/t1.6435-1/p320x320/36498341_1345578168919977_8052702541969883136_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=NqVTz4jXkXkAX-3EbOr&_nc_ht=scontent.fskp4-2.fna&oh=26184d36a922e5dee8b4e8fae55fcd7b&oe=61CFA999');
+    background-size: cover;
+  }
+  .example-header-image4 {
+    background-image: url('https://scontent.fskp4-2.fna.fbcdn.net/v/t1.18169-1/p320x320/28168124_1809340595764360_3862059156038954796_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=y7B9KUjQ3GcAX-QCupz&_nc_ht=scontent.fskp4-2.fna&oh=844062081a56724039cecd188a6f4471&oe=61CDE335');
+    background-size: cover;
+  }
+
+  mat-card{
+      margin: 30px;
+  }
+
+  .flex{
+      display: flex;
+      justify-content: center;
+  }
+
+  h2{
+      color: rgb(41, 37, 37);
+      font-family: 'Century Gothic';
+      font-size: xx-large;
+  }

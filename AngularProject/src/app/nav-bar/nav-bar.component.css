@@ -20,3 +20,18 @@
     color: white;
   }
 
+
+  @keyframes mymove {
+    50% {transform: rotate(90deg);}
+  }
+
+  .rotate {
+    animation: mymove 3s;
+  }
+
+  /* #menu:hover{
+    transition: 2s;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  } */

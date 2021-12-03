@@ -1,0 +1,12 @@
+.text{
+    width: 800px;
+    height: 200px;
+    font-family: Verdana;
+    font-size: x-large;
+}
+.main{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -15,13 +15,23 @@ import {MatListModule} from '@angular/material/list';
 import { DialogContentExampleDialog } from './map/map.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { AboutpageComponent } from './aboutpage/aboutpage.component';
+import { HomeComponent } from './home/home.component';
+import { TeampageComponent } from './teampage/teampage.component';
+import { DriverspageComponent } from './driverspage/driverspage.component';
+import {MatTableModule} from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     MapComponent,
-    DialogContentExampleDialog
+    DialogContentExampleDialog,
+    AboutpageComponent,
+    HomeComponent,
+    TeampageComponent,
+    DriverspageComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatSelectModule,
     MatListModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatTableModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

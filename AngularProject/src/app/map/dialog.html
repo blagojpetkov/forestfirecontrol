@@ -4,14 +4,24 @@
     <div *ngIf="city!==undefined">
     <h1>Град {{city.name}}</h1>
 
-    <p>Број на потребни волонтери - пожарникари: {{city.volunteers}}</p>
-    <p>Број на потребни помошници - млади од 18 до 20 години: {{city.young_volunteers}}</p>
-    <p>Број на потребни противпожарни возила: {{city.firetrucks}}</p>
-    <p>Број на потребни цистерни за вода: {{city.watertenders}}</p>
-    <p>Број на потребна механизација - трактори: {{city.tractors}}</p>
+    <p *ngIf="city.volunteers>0">Број на потребни волонтери - пожарникари: {{city.volunteers}}</p>
+    <p *ngIf="city.young_volunteers>0">Број на потребни помошници - млади од 18 до 20 години: {{city.young_volunteers}}</p>
+    <p *ngIf="city.firetrucks>0">Број на потребни противпожарни возила: {{city.firetrucks}}</p>
+    <p *ngIf="city.watertenders>0">Број на потребни цистерни за вода: {{city.watertenders}}</p>
+    <p *ngIf="city.tractors>0">Број на потребна механизација - трактори: {{city.tractors}}</p>
     <p>Потребни алатки за пожарникарите: {{city.tools}}</p>
     <mat-divider></mat-divider>
+    <p *ngIf="city.volunteers>0"><mat-checkbox>Аплицирам како волонтер - пожарникар</mat-checkbox></p>
+    <p *ngIf="city.young_volunteers>0"><mat-checkbox>Аплицирам како помошник</mat-checkbox></p>
+    <p *ngIf="city.firetrucks>0"><mat-checkbox>Аплицирам да обезбедам механизација - противпожарно возило</mat-checkbox></p>
+    <p *ngIf="city.watertenders>0"><mat-checkbox>Аплицирам да обезбедам механизација - цистерна за вода</mat-checkbox></p>
+    <p *ngIf="city.tractors>0"><mat-checkbox>Аплицирам да обезбедам механизација - трактор</mat-checkbox></p>
+    <p><mat-checkbox>Аплицирам да обезбедам потребни алатки за пожарникарите</mat-checkbox></p>
+
+
+
     <button mat-button (click) = "apply()">Аплицирај</button>
+    <button mat-button (click) = "cancel()">Откажи</button>
 
 
 

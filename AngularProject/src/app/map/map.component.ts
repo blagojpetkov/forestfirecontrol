@@ -1,6 +1,7 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 
 export interface City {
@@ -71,7 +72,10 @@ export class MapComponent implements OnInit {
 export class DialogContentExampleDialog {
   public city:City | undefined;
   public name:string;
-  constructor(@Inject(MAT_DIALOG_DATA) public data: {city: City, name:string, onFire: boolean}, public snackBar: MatSnackBar) { 
+  public router: Router
+  public isitdisabled = true;
+  constructor(router: Router ,public dialogRef: MatDialogRef<DialogContentExampleDialog>,@Inject(MAT_DIALOG_DATA) public data: {city: City, name:string, onFire: boolean}, public snackBar: MatSnackBar) { 
+    this.router = router;
     if(data.onFire){
     this.city = data.city;
     this.name = data.name;
@@ -86,6 +90,12 @@ export class DialogContentExampleDialog {
     let snackBarRef = this.snackBar.open("Успешно аплициравте", "Во ред", {
       duration: 2000
     });
+    this.dialogRef.close();
+    this.router.navigate(['drivers']);
+  }  
+
+  public cancel(): void{
+    this.dialogRef.close();
   }  
 }
 

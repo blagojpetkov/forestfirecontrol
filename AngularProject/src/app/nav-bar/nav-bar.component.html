@@ -2,14 +2,14 @@
     
     <div class="container">
       <div class="left">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button id="menu" (click)="menuclick()"   [class]="class" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
        <mat-icon class="white">menu</mat-icon>
      </button>
-     <span class="white">Волонтери</span>
+     <span class="white">Главно мени</span>
       </div>
 
       <div class="center main-name">
-      <span>Платформа за волонтирање во случај на шумски пожари</span>
+      <a style="text-decoration:none; color:white" routerLink="/home"><span>Платформа за волонтирање во случај на шумски пожари</span></a>
       </div>
 
       <div class="right">
