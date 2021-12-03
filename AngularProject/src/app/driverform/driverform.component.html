@@ -10,38 +10,64 @@
                     <hr>
                     <br>
 
-                    <div class="form-group">
-                        <label for="form-name">Име</label>
-                        <input type="text" id="form-name" class="form-control">
-                    </div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Име</mat-label>
+                        <input matInput>
+                    </mat-form-field>
 
-                    <div class="md-form">
-                        <label for="form-surname">Презиме</label>
-                        <input type="text" id="form-surname" class="form-control">
-                    </div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Презиме</mat-label>
+                        <input matInput>
+                    </mat-form-field>
 
-                    <div class="md-form">
-                        <label for="form-phone">Телефонски број</label>
-                        <input type="text" id="form-phone" class="form-control">
-                    </div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Телефонски број</mat-label>
+                        <input matInput>
+                      </mat-form-field>
 
-                    <div class="md-form">
-                        <label for="form-hour">Час</label>
-                        <input id="form-hour" class="form-control" />
-                    </div>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Време на тргнување</mat-label>
+                        <input matInput>
+                      </mat-form-field>
 
-                    <div class="md-form">
-                        <label for="form-from">Град Од</label>
-                        <input id="form-from" class="form-control" />
-                    </div>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Од градот</mat-label>
+                        <mat-select>
+                            <mat-option value="1">Скопје</mat-option>
+                            <mat-option value="2">Македонски Брод</mat-option>
+                            <mat-option value="3">Свети Николе</mat-option>
+                            <mat-option value="4">Виница</mat-option>
+                            <mat-option value="5">Неготино</mat-option>
+                            <mat-option value="6">Битола</mat-option>
+                            <mat-option value="7">Кочани</mat-option>
+                            <mat-option value="8">Кичево</mat-option>
+                            <mat-option value="9">Демир Хисар</mat-option>
+                            <mat-option value="10">Охрид</mat-option>
+                            <mat-option value="11">Струга</mat-option>
+                            <mat-option value="12">Струмица</mat-option>
+                            <mat-option value="13">Берово</mat-option>
+                            <mat-option value="14">Кратово</mat-option>
+                            <mat-option value="15">Куманово</mat-option>
+                            <mat-option value="16">Велес</mat-option>
+                            <mat-option value="17">Крушево</mat-option>
+                            <mat-option value="18">Ресен</mat-option>
+                        </mat-select>
+                      </mat-form-field>
 
-                    <div class="md-form">
-                        <label for="form-to">Град До</label>
-                        <input id="form-to" class="form-control" />
-                    </div>
+                      <mat-form-field appearance="fill">
+                        <mat-label>До градот</mat-label>
+                        <mat-select>
+                          <mat-option value="1">Скопје</mat-option>
+                          <mat-option value="2">Македонски Брод</mat-option>
+                          <mat-option value="3">Свети Николе</mat-option>
+                          <mat-option value="4">Виница</mat-option>
+                          <mat-option value="5">Неготино</mat-option>
+                          <mat-option value="6">Битола</mat-option>
+                        </mat-select>
+                      </mat-form-field>
 
                     <div class="text-center mt-4">
-                        <button class="btn btn-danger">Submit</button>
+                        <button mat-raised-button color="warn" routerLink="/home">Submit</button>
                     </div>
                 </div>
             </div>
